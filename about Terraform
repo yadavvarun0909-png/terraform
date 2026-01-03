@@ -1,0 +1,44 @@
+Terraform is a tool that creates and manages cloud resources automatically
+
+Instead of clicking in AWS, you write code
+ Terraform reads the code and creates servers, networks, databases
+
+Using Terraform, you can create:
+EC2 instances
+VPC, Subnets
+Security Groups
+Load Balancers
+RDS databases
+EKS (Kubernetes)
+S3 buckets
+
+| Command             | Meaning                   |
+| ------------------- | ------------------------- |
+| `terraform init`    | Prepare Terraform         |
+| `terraform plan`    | Show what will be created |
+| `terraform apply`   | Create infrastructure     |
+| `terraform destroy` | Delete everything         |
+
+Without Terraform:-------------
+Manually create EC2
+Manually create VPC
+Manually create Security Group
+Easy to make mistakes
+Hard to repeat the same setup
+
+
+With Terraform:---------------
+Write code once
+Run one command
+Everything is created automatically
+Same setup every time
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+provider "aws" {
+  region = "ap-south-1"
+}
+
+resource "aws_instance" "my_ec2" {
+  count         = 5
+  ami           = "ami-0f5ee92e2d63afc18"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "Terraform-EC2-${count.index + 1}"
+  }
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EXPLANATION: count = 5 → creates 5 EC2 instances
+count.index → numbers them 0 to 4
+Names become:
+Terraform-EC2-1
+Terraform-EC2-2
+Terraform-EC2-3
+Terraform-EC2-4
+Terraform-EC2-5
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+RUN COMMANDS:
+terraform init
+terraform plan
+terraform apply

@@ -1,0 +1,31 @@
+print("Hello from EC2")
+
+mkdir my-python-app
+cd my-python-app
+
+# app.py
+print("Hello from EC2!")
+
+python3 app.py
+
+Hello from EC2!
+
+git init                  # initialize git in project folder
+git add .                 # stage all files
+git commit -m "Initial commit"   # commit files
+git branch -M main        # make branch main (optional)
+git remote add origin https://github.com/your-username/my-python-app.git
+git push -u origin main   # push code to GitHub
+
+
+ssh -i ~/varunya12.pem ubuntu@3.108.249.238
+
+sudo apt update
+sudo apt install python3 git -y
+
+git clone https://github.com/your-username/my-python-app.git
+cd my-python-app
+
+python3 app.py
+
+Hello from EC2!

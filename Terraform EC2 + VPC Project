@@ -1,5 +1,11 @@
 This project automatically creates a complete AWS environment (network + server) using code instead of clicking in the AWS console.
 
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ""
+ls ~/.ssh/
+id_rsa
+id_rsa.pub
+terraform plan
+terraform apply
 
 
 
